@@ -1,0 +1,53 @@
+// Align Utility
+// ============================================================
+
+.u-align {
+  &-left {
+    text-align: left !important;
+  }
+  &-right{
+    text-align: right !important;
+  }
+  &-center {
+    text-align: center !important;
+  }
+  @media @tablet {
+    &-tb {
+      &-left {
+        text-align: left !important;
+      }
+      &-right {
+        text-align: right !important;
+      }
+      &-center {
+        text-align: center !important;
+      }
+    }
+  }
+  @media @laptop {
+    &-lp {
+      &-left {
+        text-align: left !important;
+      }
+      &-right {
+        text-align: right !important;
+      }
+      &-center {
+        text-align: center !important;
+      }
+    }
+  }
+  @media @desktop {
+    &-db {
+      &-left {
+        text-align: left !important;
+      }
+      &-right {
+        text-align: right !important;
+      }
+      &-center {
+        text-align: center !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+// Color Utility
+// ============================================================
+
+.u-color {
+  // Default Colors
+  &-red {
+    color: @red !important;
+  }
+  &-orange {
+    color: @orange !important;
+  }
+  &-yellow {
+    color: @yellow !important;
+  }
+  &-green {
+    color: @green !important;
+  }
+  &-blue {
+    color: @blue !important;
+  }
+  &-purple {
+    color: @purple !important;
+  }
+  &-black {
+    color: @black !important;
+  }
+  &-white {
+    color: @white !important;
+  }
+
+
+  // Product Colors
+
+  &-default {
+    color: @default-color !important;
+  }
+  &-brand {
+    color: @brand-color !important;
+  }
+  &-accent {
+    color: @accent-color !important;
+  }
+  &-heading {
+    color: @heading-color !important;
+  }
+
+  &-shade-light {
+    color: @shade-light !important;
+  }
+  &-shade {
+    color: @shade !important;
+  }
+  &-shade-heavy {
+    color: @shade-heavy !important;
+  }
+}

@@ -1,0 +1,56 @@
+// Label Module
+// ============================================================
+
+// Corner Properties
+@s-label__radius: 3px;
+@s-label__font-weight: @bold;
+
+.s-label {
+  position: relative;
+  display: inline-flex;
+  margin-left: @vr0;
+  margin-right: @vr0;
+  padding: 4px 5px;
+  outline: none;
+  border-radius: @s-label__radius;
+  vertical-align: top;
+  font-family: @font-family;
+  font-size: 9px;
+  font-weight: @s-label__font-weight;
+  line-height: 1;
+  color: white;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+
+  &.-brand {
+    background: @brand-color;
+  }
+  &.-accent {
+    background: @accent-color;
+  }
+  &.-red {
+    background: @red;
+  }
+  &.-orange {
+    background: @orange;
+  }
+  &.-yellow {
+    background: @yellow;
+  }
+  &.-green {
+    background: @green;
+  }
+  &.-blue {
+    background: @blue;
+  }
+  &.-purple {
+    background: @purple;
+  }
+  &.-black {
+    background: @black;
+  }
+  &.-white {
+    background: @white;
+    color: @brand-color;
+  }
+}

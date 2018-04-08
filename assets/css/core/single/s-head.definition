@@ -1,0 +1,242 @@
+// Head Single
+// ============================================================
+
+// Weight Variables
+@s-head__thin: @thin;
+@s-head__light: @light;
+@s-head__regular: @regular;
+@s-head__medium: @medium;
+@s-head__semi-bold: @semi-bold;
+@s-head__bold: @bold;
+
+// Spacing Variables
+@s-head__xtight: @vr1;
+@s-head__tight: @vr2;
+@s-head__narrow: @vr3;
+@s-head__wide: @vr4;
+@s-head__xwide: @vr5;
+
+// Custom
+@s-head__cond: -1px;
+@s-head__sprd: 1px;
+
+// Define
+// ------------------------------
+
+.s-head {
+  display: block;
+  margin: 0;
+
+  // Reset
+  // ------------------------------
+
+  &.-compact {
+    line-height: 1;
+  }
+  &.-relax {
+    line-height: 2;
+  }
+  &.-asleep {
+    line-height: 3;
+  }
+  &.-levitate {
+    line-height: 4;
+  }
+
+  // Size Overrides
+  // ------------------------------
+
+  &.-h1 {
+    font-size: @h1
+  }
+  &.-h2 {
+    font-size: @h2
+  }
+  &.-h3 {
+    font-size: @h3
+  }
+  &.-h4 {
+    font-size: @h4
+  }
+  &.-h5 {
+    font-size: @h5
+  }
+  &.-h6 {
+    font-size: @h6
+  }
+
+  @media @tablet {
+    &.-tb {
+      &-h1 {
+        font-size: @h1;
+      }
+      &-h2 {
+        font-size: @h2;
+      }
+      &-h3 {
+        font-size: @h3;
+      }
+      &-h4 {
+        font-size: @h4;
+      }
+      &-h5 {
+        font-size: @h5;
+      }
+      &-h6 {
+        font-size: @h6;
+      }
+    }
+  }
+  @media @laptop {
+    &.-lp {
+      &-h1 {
+        font-size: @h1;
+      }
+      &-h2 {
+        font-size: @h2;
+      }
+      &-h3 {
+        font-size: @h3;
+      }
+      &-h4 {
+        font-size: @h4;
+      }
+      &-h5 {
+        font-size: @h5;
+      }
+      &-h6 {
+        font-size: @h6;
+      }
+    }
+  }
+  @media @desktop {
+    &.-dk {
+      &-h1 {
+        font-size: @h1;
+      }
+      &-h2 {
+        font-size: @h2;
+      }
+      &-h3 {
+        font-size: @h3;
+      }
+      &-h4 {
+        font-size: @h4;
+      }
+      &-h5 {
+        font-size: @h5;
+      }
+      &-h6 {
+        font-size: @h6;
+      }
+    }
+  }
+
+
+  // Weight Variation
+  // ------------------------------
+
+  &.-thin {
+    font-weight: @s-head__light;
+  }
+  &.-light {
+    font-weight: @s-head__light;
+  }
+  &.-regular {
+    font-weight: @s-head__regular;
+  }
+  &.-medium {
+    font-weight: @s-head__medium;
+  }
+  &.-semi-bold {
+    font-weight: @s-head__semi-bold;
+  }
+  &.-bold {
+    font-weight: @s-head__bold;
+  }
+
+
+  // Custom Variation
+  // ------------------------------
+
+  &.-uppr {
+    text-transform: uppercase;
+  }
+  &.-cond {
+    letter-spacing: @s-head__cond;
+  }
+  &.-sprd {
+    letter-spacing: @s-head__sprd;
+  }
+  &.-inline {
+    display: inline-block;
+  }
+  &.-ruled {
+    padding-bottom: @vr0;
+    border-bottom: 1px solid darken(@background, 10%);
+    margin-bottom: @vr0 + @vr0;
+  }
+  &.-center {
+    text-align: center;
+  }
+
+
+  // Spacing Variations
+  // ------------------------------
+
+  &.-xtight {
+    margin-bottom: @s-head__xtight;
+  }
+  &.-tight {
+    margin-bottom: @s-head__tight;
+  }
+  &.-narrow {
+    margin-bottom: @s-head__narrow;
+  }
+  &.-wide {
+    margin-bottom: @s-head__wide;
+  }
+  &.-xwide {
+    margin-bottom: @s-head__xwide;
+  }
+}
+
+
+// Format
+// ------------------------------
+h1.s-head.-format {
+  font-size: @h1;
+  line-height: 1.25;
+  margin-top: @line-height * 3;
+  margin-bottom: @line-height;
+}
+h2.s-head.-format {
+  font-size: @h2;
+  line-height: 1.25;
+  margin-top: @line-height * 3;
+  margin-bottom: @line-height;
+}
+h3.s-head.-format {
+  font-size: @h3;
+  line-height: 1.25;
+  margin-top: @line-height * 2;
+  margin-bottom: @line-height;
+}
+h4.s-head.-format {
+  font-size: @h4;
+  line-height: 1.25;
+  margin-top: @line-height;
+  margin-bottom: @line-height;
+}
+h5.s-head.-format {
+  font-size: @h5;
+  line-height: 1.25;
+  margin-top: @line-height;
+  margin-bottom: @line-height;
+}
+h6.s-head.-format {
+  font-size: @h6;
+  line-height: 1.25;
+  margin-top: @line-height;
+  margin-bottom: @line-height;
+}

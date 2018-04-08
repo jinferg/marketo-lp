@@ -1,0 +1,116 @@
+// List Module
+// ============================================================
+
+@m-list__xtight: @vr0;
+@m-list__tight: @vr1;
+@m-list__narrow: @vr2;
+@m-list__wide: @vr3;
+@m-list__xwide: @vr4;
+
+.m-list {
+
+  list-style: none;
+
+  ul, ol {
+    list-style: none;
+    margin-bottom: 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+
+  // Direction
+  // ------------------------------
+
+  &.-inline {
+    li, .m-list__item {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+    &.-tight,&.-narrow,&.-wide {
+      li, .m-list__item {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &.-inline.-raw {
+    li, .m-list__item {
+      margin-right: 0;
+    }
+    li, .m-list__item:last-child {
+      margin-right: 0;
+    }
+  }
+  &.-inline.-tight {
+    li, .m-list__item {
+      margin-right: @m-list__tight;
+    }
+    li, .m-list__item:last-child {
+      margin-right: 0;
+    }
+  }
+  &.-inline.-narrow {
+    li, .m-list__item {
+      margin-right: @m-list__narrow;
+    }
+    li, .m-list__item:last-child {
+      margin-right: 0;
+    }
+  }
+  &.-inline.-wide {
+    li, .m-list__item {
+      margin-right: @m-list__wide;
+    }
+    li, .m-list__item:last-child {
+      margin-right: 0;
+    }
+  }
+
+
+  // Spacing
+  // ------------------------------
+
+  &.-xtight {
+    li, .m-list__item {
+      margin-bottom: @m-list__xtight;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &.-tight {
+    li, .m-list__item {
+      margin-bottom: @m-list__tight;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &.-narrow {
+    li, .m-list__item {
+      margin-bottom: @m-list__narrow;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &.-wide {
+    li, .m-list__item {
+      margin-bottom: @m-list__wide;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &.-xwide {
+    li, .m-list__item {
+      margin-bottom: @m-list__xwide;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,700 @@
+<!doctype html>
+<html>
+<head>
+
+  <!-- SITE META -->
+  <meta class="mktoString" id="meta_title" mktoName="Meta - Title" default="Fergus | Quote, estimate and invoice" allowHtml="true">
+  <meta class="mktoString" id="meta_description" mktoName="Meta - Description" default="Description" allowHtml="true">
+
+  <title>${meta_title}</title>
+
+  <!-- Page Meta -->
+  <meta charset="utf-8" />
+  <meta name="description" content="${meta_description}">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" href="http://info.fergusapp.com/rs/163-RUO-573/images/favicon-16w.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="http://info.fergusapp.com/rs/163-RUO-573/images/favicon-32w.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="http://info.fergusapp.com/rs/163-RUO-573/images/favicon-96w.png" sizes="96x96">
+
+  <!-- Styles -->
+  <!-- <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/zap.css"> -->
+  <link rel="stylesheet" href="http://info.fergusapp.com/rs/163-RUO-573/images/zap.css">
+
+  <!-- Typekit -->
+  <link rel="stylesheet" href="https://use.typekit.net/man2jky.css">
+
+  <!-- Font Awesome 5 -->
+  <script defer src="http://info.fergusapp.com/rs/163-RUO-573/images/fa-brands.min.js"></script>
+  <script defer src="http://info.fergusapp.com/rs/163-RUO-573/images/fa-solid.min.js"></script>
+  <script defer src="http://info.fergusapp.com/rs/163-RUO-573/images/fa-regular.min.js"></script>
+  <script defer src="http://info.fergusapp.com/rs/163-RUO-573/images/fontawesome.min.js"></script>
+
+  <style>
+    .mktoImg.mktoGen {
+      display: block !important;
+    }
+  </style>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+  <!-- SECTION SWITCHES -->
+  <meta class="mktoBoolean" id="hero_switch" mktoName="Hero - Visibility" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="heroIMG_switch" mktoName="Hero Image - Visibility" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="threeCI_switch" mktoName="Three Col Icon - Visibility" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="threeCIMG_switch" mktoName="Three Col Imagae - Visibility" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="plainCTA_switch" mktoName="Plain CTA - Visibility" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="videoYT_switch" mktoName="Video YouTube - Visibility" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="videoVM_switch" mktoName="Video Vimeo - Visibility" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="imageLTR_switch" mktoName="Image Left Text Right - Visibility" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="form_switch" mktoName="Form - Visibility" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="singleCTA_switch" mktoName="Single CTA - Visibility" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="testimonial_switch" mktoName="Testimonial - Visibility" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="mainCTA_switch" mktoName="Main CTA - Visibility" default="true" true_value="block"  false_value="none" false_value_name="Hide" true_value_name="Show">
+
+
+  <!-- MASTER SWITCHES -->
+  <meta class="mktoBoolean" id="margin_toggle" mktoName="Margin - Toggle" default="false" true_value="padding-top: 0 !important" false_value="" false_value_name="Default" true_value_name="None">
+
+  <!-- BAND SWITCHES -->
+  <meta class="mktoBoolean" id="header_band" mktoName="Header - Band" default="false" true_value="-shade-light" false_value="-white" false_value_name="White" true_value_name="Shade">
+  <meta class="mktoBoolean" id="hero_band" mktoName="Hero - Band" default="false" true_value="-shade-light" false_value="-white" false_value_name="White" true_value_name="Shade">
+  <meta class="mktoBoolean" id="heroIMG_band" mktoName="Hero Image - Band" default="true" true_value="-shade-light" false_value="-white" false_value_name="White" true_value_name="Shade">
+  <meta class="mktoBoolean" id="threeCI_band" mktoName="Three Col Icon - Band" default="true" true_value="-shade-light" false_value="-white" false_value_name="White" true_value_name="Shade">
+  <meta class="mktoBoolean" id="threeCIMG_band" mktoName="Three Col Imagae - Band" default="true" true_value="-shade-light" false_value="-white" false_value_name="White" true_value_name="Shade">
+  <meta class="mktoBoolean" id="plainCTA_band" mktoName="Plain CTA - Band" default="false" true_value="-shade-light" false_value="-white" false_value_name="White" true_value_name="Shade">
+  <meta class="mktoBoolean" id="imageLTR_band" mktoName="Image Left Text Right - Band" default="false" true_value="-shade-light" false_value="-white" false_value_name="White" true_value_name="Shade">
+  <meta class="mktoBoolean" id="form_band" mktoName="Form - Band" default="true" true_value="-shade-light" false_value="-white" false_value_name="White" true_value_name="Shade">
+  <meta class="mktoBoolean" id="singleCTA_band" mktoName="Single CTA - Band" default="false" true_value="-shade-light" false_value="-white" false_value_name="White" true_value_name="Shade">
+  <meta class="mktoBoolean" id="testimonial_band" mktoName="Testimonial - Band" default="true" true_value="-shade-light" false_value="-white" false_value_name="White" true_value_name="Shade">
+
+
+
+  <!-- HERO -->
+  <meta class="mktoBoolean" id="hero_title_switch" mktoName="Hero - Title Visibility" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="hero_subtitle_switch" mktoName="Hero - Subtitle Visibility" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="hero_btn_switch" mktoName="Hero - Button Visibility" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="hero_disclaimer_switch" mktoName="Hero - Disclaimer Visibility" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoBoolean" id="hero_custom_switch" mktoName="Hero - Custom Visibility" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoString" id="hero_title" mktoName="Hero - Title" default="Quote, estimate and invoice" allowHtml="true">
+  <meta class="mktoString" id="hero_subtitle" mktoName="Hero - Subtitle" default="All from the same place. Forget data entry." allowHtml="true">
+  <meta class="mktoString" id="hero_btnLink" mktoName="Hero - Button Link" default="http://fergus.com" allowHtml="true">
+  <meta class="mktoString" id="hero_btnText" mktoName="Hero - Button Text" default="Free Trial" allowHtml="true">
+  <meta class="mktoString" id="hero_disclaimer" mktoName="Hero - Disclaimer" default="No credit card required. Try it for 30 days for free." allowHtml="true">
+
+  <!-- THREE COL ICON -->
+  <meta class="mktoString" id="threeCI_introTitle" mktoName="Three Col Icon - Intro Title" default="The nuts and bolts" allowHtml="true">
+  <meta class="mktoString" id="threeCI_introSubtitle" mktoName="Three Col Icon - Intro Subtitle" default="Create detailed quotes, carry out the work and then eliminate double handling by exporting as an invoice." allowHtml="true">
+  <meta class="mktoString" id="threeCI_title1" mktoName="Three Col Icon - Title 1" default="Title 1" allowHtml="true">
+  <meta class="mktoString" id="threeCI_title2" mktoName="Three Col Icon - Title 2" default="Title 2" allowHtml="true">
+  <meta class="mktoString" id="threeCI_title3" mktoName="Three Col Icon - Title 3" default="Title 3" allowHtml="true">
+  <meta class="mktoString" id="threeCI_btnLink" mktoName="Three Col Icon - Button Link" default="http://fergus.com" allowHtml="true">
+  <meta class="mktoString" id="threeCI_btnText" mktoName="Three Col Icon - Button Text" default="Free Trial" allowHtml="true">
+
+
+  <!-- THREE COL IMAGE -->
+  <meta class="mktoString" id="threeCIMG_introTitle" mktoName="Three Col Image - Intro Title" default="The nuts and bolts" allowHtml="true">
+  <meta class="mktoString" id="threeCIMG_introSubtitle" mktoName="Three Col Image - Intro Subtitle" default="Create detailed quotes, carry out the work and then eliminate double handling by exporting as an invoice." allowHtml="true">
+  <meta class="mktoString" id="threeCIMG_title1" mktoName="Three Col Image - Title 1" default="Title 1" allowHtml="true">
+  <meta class="mktoString" id="threeCIMG_title2" mktoName="Three Col Image - Title 2" default="Title 2" allowHtml="true">
+  <meta class="mktoString" id="threeCIMG_title3" mktoName="Three Col Image - Title 3" default="Title 3" allowHtml="true">
+  <meta class="mktoString" id="threeCIMG_btnLink" mktoName="Three Col Image - Button Link" default="http://fergus.com" allowHtml="true">
+  <meta class="mktoString" id="threeCIMG_btnText" mktoName="Three Col Image - Button Text" default="Free Trial" allowHtml="true">
+
+
+  <!-- PLAIN CTA -->
+  <meta class="mktoString" id="plainCTA_title" mktoName="Plain CTA - Title" default="The nuts and bolts" allowHtml="true">
+  <meta class="mktoString" id="plainCTA_subtitle" mktoName="Plain CTA - Subtitle" default="Create detailed quotes, carry out the work and then eliminate double handling by exporting as an invoice." allowHtml="true">
+  <meta class="mktoString" id="plainCTA_btnLink" mktoName="PlainC TA - Button Link" default="http://fergus.com" allowHtml="true">
+  <meta class="mktoString" id="plainCTA_btnText" mktoName="Plain CTA - Button Text" default="Free Trial" allowHtml="true">
+
+
+  <!-- VIDEO YOUTUBE -->
+  <meta class="mktoString" id="videoYT_title" mktoName="Video Youtube - Title" default="The nuts and bolts" allowHtml="true">
+  <meta class="mktoString" id="videoYT_subtitle" mktoName="Video Youtube - Subtitle" default="Create detailed quotes, carry out the work and then eliminate double handling by exporting as an invoice." allowHtml="true">
+  <meta class="mktoString" id="videoYT_link" mktoName="Video Youtube - Link" default="QILiHiTD3uc" allowHtml="true">
+
+
+  <!-- VIDEO VIMEO -->
+  <meta class="mktoString" id="videoVM_title" mktoName="Video Vimeo - Title" default="The nuts and bolts" allowHtml="true">
+  <meta class="mktoString" id="videoVM_subtitle" mktoName="Video Vimeo - Subtitle" default="Create detailed quotes, carry out the work and then eliminate double handling by exporting as an invoice." allowHtml="true">
+  <meta class="mktoString" id="videoVM_link" mktoName="Video Vimeo - Link" default="65369460" allowHtml="true">
+
+
+  <!-- IMAGE LEFT TEXT RIGHT -->
+  <meta class="mktoString" id="imageLTR_title" mktoName="Image Left Text Right - Title" default="The nuts and bolts" allowHtml="true">
+  <meta class="mktoString" id="imageLTR_btnLink" mktoName="Image Left Text Right - Button Link" default="http://fergus.com" allowHtml="true">
+  <meta class="mktoString" id="imageLTR_btnText" mktoName="Image Left Text Right - Button Text" default="Free Trial" allowHtml="true">
+
+
+  <!-- FORM -->
+  <meta class="mktoString" id="form_title" mktoName="Form - Title" default="Sign up Form" allowHtml="true">
+  <meta class="mktoString" id="form_subtitle" mktoName="Form - Subitle" default="This is an example of a form block for marketo" allowHtml="true">
+  <meta class="mktoBoolean" id="form_disclaimer_switch" mktoName="Form - Disclaimer Visibility" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
+  <meta class="mktoString" id="form_disclaimer" mktoName="Form - Disclaimer" default="Please note, your email preference settings only apply to Fergus marketing emails. We may still send you operational emails that contain important information relating to Fergus services or your Fergus account." allowHtml="true">
+
+
+  <!-- SINGLE CTA -->
+  <meta class="mktoString" id="singleCTA_btnLink" mktoName="Single CTA - Button Link" default="http://fergus.com" allowHtml="true">
+  <meta class="mktoString" id="singleCTA_btnText" mktoName="Single CTA - Button Text" default="Free Trial" allowHtml="true">
+
+
+  <!-- TESTIMONIAL -->
+  <meta class="mktoString" id="testimonial_title" mktoName="Testimonial - Title" default="What our customers have to say..." allowHtml="true">
+  <meta class="mktoString" id="testimonial_subtitle" mktoName="Testimonial - Subitle" default="Create detailed quotes, carry out the work and then eliminate double handling by exporting as an invoice." allowHtml="true">
+
+  <meta class="mktoString" id="testimonial_quote1" mktoName="Testimonial - Quote 1" default="This job app software is amazing! It has cut my office time in half." allowHtml="true">
+  <meta class="mktoString" id="testimonial_name1" mktoName="Testimonial - Name 1" default="Ryan Walker" allowHtml="true">
+  <meta class="mktoString" id="testimonial_company1" mktoName="Testimonial - Company 1" default="Owner, Three Ducks Solutions Ltd." allowHtml="true">
+
+  <meta class="mktoString" id="testimonial_quote2" mktoName="Testimonial - Quote 2" default="This job app software is amazing! It has cut my office time in half." allowHtml="true">
+  <meta class="mktoString" id="testimonial_name2" mktoName="Testimonial - Name 2" default="Ryan Walker" allowHtml="true">
+  <meta class="mktoString" id="testimonial_company2" mktoName="Testimonial - Company 2" default="Owner, Three Ducks Solutions Ltd." allowHtml="true">
+
+  <meta class="mktoString" id="testimonial_quote3" mktoName="Testimonial - Quote 3" default="This job app software is amazing! It has cut my office time in half." allowHtml="true">
+  <meta class="mktoString" id="testimonial_name3" mktoName="Testimonial - Name 3" default="Ryan Walker" allowHtml="true">
+  <meta class="mktoString" id="testimonial_company3" mktoName="Testimonial - Company 3" default="Owner, Three Ducks Solutions Ltd." allowHtml="true">
+
+  <meta class="mktoString" id="testimonial_quote4" mktoName="Testimonial - Quote 4" default="This job app software is amazing! It has cut my office time in half." allowHtml="true">
+  <meta class="mktoString" id="testimonial_name4" mktoName="Testimonial - Name 4" default="Ryan Walker" allowHtml="true">
+  <meta class="mktoString" id="testimonial_company4" mktoName="Testimonial - Company 4" default="Owner, Three Ducks Solutions Ltd." allowHtml="true">
+
+
+  <!-- MAIN CTA -->
+  <meta class="mktoString" id="mainCTA_title" mktoName="Main CTA - Title" default="Try it free for 30 days" allowHtml="true">
+  <meta class="mktoString" id="mainCTA_subtitle" mktoName="Main CTA - Subitle" default="All from the same place. Forget data entry." allowHtml="true">
+  <meta class="mktoString" id="mainCTA_disclaimer" mktoName="Main CTA - Disclaimer" default="No credit card required. Try it for 30 days for free." allowHtml="true">
+  <meta class="mktoString" id="mainCTA_btnLink" mktoName="Main CTA - Button Link" default="http://fergus.com" allowHtml="true">
+  <meta class="mktoString" id="mainCTA_btnText" mktoName="Main CTA - Button Text" default="Free Trial" allowHtml="true">
+
+</head>
+<body>
+
+
+<header class="l-band ${header_band} u-pad-top-5vh u-pad-bottom-5vh">
+  <div class="l-wrap">
+    <menu class="m-nav -center">
+      <div class="m-nav__group">
+        <div class="m-nav__item">
+          <a href="https://fergus.com">
+            <img src="http://info.fergusapp.com/rs/163-RUO-573/images/fergus-logo.svg" />
+          </a>
+        </div>
+      </div>
+    </menu>
+  </div>
+</header>
+
+
+
+<section class="l-band ${hero_band}" style="display: ${hero_switch};">
+  <div class="l-wrap">
+    <div class="l-row u-pad-bottom-5vh">
+      <div class="l-row__col -w-16 u-align-center">
+        <<h1 class="s-head -m-h2 -ml-h2 -semi-bold -xtight" style="display: ${hero_title_switch};">
+          ${hero_title}
+        </h1>
+        <h3 class="s-head -m-h3 -medium -narrow" style="display: ${hero_subtitle_switch};">
+          ${hero_subtitle}
+        </h3>
+        <div style="display: ${hero_btn_switch};">
+          <a href="${hero_btnLink}" class="s-btn -round -accent -broader">
+            ${hero_btnText}
+          </a>
+        </div>
+        <p class="u-marg-top-tight" style="display: ${hero_disclaimer_switch};">
+          ${hero_disclaimer}
+        </p>
+
+        <div style="display: ${hero_custom_switch};">
+          <div class="mktoText" id="hero_custom" mktoName="Hero - Custom">
+            CUSTOM CONTENT
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="l-band ${heroIMG_band}" style="display: ${heroIMG_switch}; ${margin_toggle};">
+  <div class="l-wrap">
+    <div class="l-row">
+      <div class="l-row__col -m-16 -t-14 -d-12 -v-10 -center">
+        <img class="mktoImg" id="hero_image" mktoName="Hero - Image">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="l-band ${threeCI_band} u-pad-ml-y-11vh u-pad-y-8vh" style="display: ${threeCI_switch}; ${margin_toggle};">
+  <div class="l-wrap">
+
+    <div class="l-row">
+      <div class="l-row__col -w-16 u-align-center">
+        <h1 class="s-head -m-h2 -ml-h2 -semi-bold -xtight">
+          ${threeCI_introTitle}
+        </h1>
+        <h3 class="s-head -m-h4 -medium -tight">
+          ${threeCI_introSubtitle}
+        </h3>
+      </div>
+    </div>
+
+    <div class="l-row">
+      <div class="l-row__col -m-16 -t-14 -d-11 -center">
+        <div class="l-row -wide u-pad-bottom-tight">
+          <div class="l-row__col -m-16 -ml-1-3 -t-1-3 u-pad-y-3vh">
+            <img class="mktoImg s-thumb -round u-pad-bottom-2vh" id="threeCI_image1" mktoName="Three Col Icon - Image 1">
+            <h3 class="s-head -medium -xtight">
+              ${threeCI_title1}
+            </h3>
+            <div class="mktoText" id="threeCI_body1" mktoName="Body 1">
+              Optionally add default text for the editable text area.
+            </div>
+          </div>
+
+          <div class="l-row__col -m-16 -ml-1-3 -t-1-3 u-pad-y-3vh">
+            <img class="mktoImg s-thumb -round u-pad-bottom-2vh" id="threeCI_image2" mktoName="Three Col Icon - Image 2">
+            <h3 class="s-head -medium -xtight">
+              ${threeCI_title2}
+            </h3>
+            <div class="mktoText" id="threeCI_body2" mktoName="Body 2">
+              Optionally add default text for the editable text area.
+            </div>
+          </div>
+
+          <div class="l-row__col -m-16 -ml-1-3 -t-1-3 u-pad-y-3vh">
+            <img class="mktoImg s-thumb -round u-pad-bottom-2vh" id="threeCI_image3" mktoName="Three Col Icon - Image 3">
+            <h3 class="s-head -medium -xtight">
+              ${threeCI_title3}
+            </h3>
+            <div class="mktoText" id="threeCI_body3" mktoName="Body 3">
+              Optionally add default text for the editable text area.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-row">
+      <div class="l-row__col -w-16 u-align-center">
+        <a href="${threeCI_btnLink}" class="s-btn -small -round -accent -broad">
+          ${threeCI_btnText}
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section class="l-band ${threeCIMG_band} u-pad-ml-y-11vh u-pad-y-8vh" style="display: ${threeCIMG_switch}; ${margin_toggle};">
+  <div class="l-wrap">
+
+    <div class="l-row">
+      <div class="l-row__col -w-16 u-align-center">
+        <h1 class="s-head -m-h2 -ml-h2 -semi-bold -xtight">
+          ${threeCIMG_introTitle}
+        </h1>
+        <h3 class="s-head -m-h4 -medium -tight">
+          ${threeCIMG_introSubtitle}
+        </h3>
+      </div>
+    </div>
+
+    <div class="l-row">
+      <div class="l-row__col -m-16 -t-14 -d-11 -center">
+        <div class="l-row -wide u-pad-bottom-tight">
+          <div class="l-row__col -m-16 -ml-1-3 -t-1-3 u-pad-y-3vh">
+            <img class="mktoImg s-img u-pad-bottom-2vh" id="threeCIMG_image1" mktoName="Three Col Icon - Image 1">
+            <h3 class="s-head -medium -xtight">
+              ${threeCIMG_title1}
+            </h3>
+            <div class="mktoText" id="threeCIMG_body1" mktoName="Body 1">
+              Optionally add default text for the editable text area.
+            </div>
+          </div>
+
+          <div class="l-row__col -m-16 -ml-1-3 -t-1-3 u-pad-y-3vh">
+            <img class="mktoImg s-img u-pad-bottom-2vh" id="threeCIMG_image2" mktoName="Three Col Icon - Image 2">
+            <h3 class="s-head -medium -xtight">
+              ${threeCIMG_title2}
+            </h3>
+            <div class="mktoText" id="threeCIMG_body2" mktoName="Body 2">
+              Optionally add default text for the editable text area.
+            </div>
+          </div>
+
+          <div class="l-row__col -m-16 -ml-1-3 -t-1-3 u-pad-y-3vh">
+            <img class="mktoImg s-img u-pad-bottom-2vh" id="threeCIMG_image3" mktoName="Three Col Icon - Image 3">
+            <h3 class="s-head -medium -xtight">
+              ${threeCIMG_title3}
+            </h3>
+            <div class="mktoText" id="threeCIMG_body3" mktoName="Body 3">
+              Optionally add default text for the editable text area.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="l-row">
+      <div class="l-row__col -w-16 u-align-center">
+        <a href="${threeCIMG_btnLink}" class="s-btn -small -round -accent -broad">
+          ${threeCIMG_btnText}
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<section class="l-band ${plainCTA_band} u-pad-ml-y-11vh u-pad-y-8vh" style="display: ${plainCTA_switch}; ${margin_toggle};">
+  <div class="l-wrap">
+
+    <div class="l-row u-align-center">
+      <div class="l-row__col -w-16">
+        <h1 class="s-head -m-h2 -ml-h2 -semi-bold -tight">
+          ${plainCTA_title}
+        </h1>
+        <h3 class="s-head -m-h4 -medium -narrow">
+          ${plainCTA_subtitle}
+        </h3>
+        <a href="${plainCTA_btnLink}" class="s-btn -small -round -accent -broad">
+          ${plainCTA_btnText}
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+<section class="l-band -brand u-color-white u-pad-ml-y-11vh u-pad-y-8vh u-align-center" style="display: ${videoYT_switch};">
+  <div class="l-wrap">
+    <h1 class="s-head -m-h2 -ml-h2 -semi-bold -xtight">
+      ${videoYT_title}
+    </h1>
+    <h3 class="s-head -m-h4 -medium -xwide">
+      ${videoYT_subtitle}
+    </h3>
+    <div class="l-row">
+      <div class="l-row__col -m-16 -t-14 -d-10 -v-10 -center">
+        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/${videoYT_link}' frameborder='0' allowfullscreen></iframe></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="l-band -brand u-color-white u-pad-ml-y-11vh u-pad-y-8vh u-align-center" style="display: ${videoVM_switch};">
+  <div class="l-wrap">
+    <h1 class="s-head -m-h2 -ml-h2 -semi-bold -xtight">
+      ${videoVM_title}
+    </h1>
+    <h3 class="s-head -m-h4 -medium -xwide">
+      ${videoVM_subtitle}
+    </h3>
+    <div class="l-row">
+      <div class="l-row__col -m-16 -t-14 -d-10 -v-10 -center">
+        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/${videoVM_link}' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<section class="l-band ${imageLTR_band} u-pad-ml-y-11vh u-pad-y-8vh" style="display: ${imageLTR_switch}; ${margin_toggle};">
+  <div class="l-wrap">
+
+    <div class="l-row">
+      <div class="l-row__col -m-16 -t-12 -d-11 -center">
+
+        <div class="l-row -flex -middle -wrap -wide">
+          <div class="l-row__col -m-16 -t-8 u-marg-m-bottom-tight u-marg-ml-bottom-tight">
+            <img class="mktoImg s-img" id="imageLTR_image" mktoName="Image Left Text Right - Image">
+          </div>
+          <div class="l-row__col -m-16 -t-8">
+            <h3 class="s-head -medium -tight">
+              ${imageLTR_title}
+            </h3>
+            <div class="mktoText u-pad-bottom-tight" id="imageLTR_body" mktoName="Body">
+              Optionally add default text for the editable text area.
+            </div>
+            <a href="${imageLTR_btnLink}" class="s-btn -round -accent -broad -small u-marg-top-xtight">
+              ${imageLTR_btnText}
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="l-band ${form_band} u-pad-ml-y-11vh u-pad-y-8vh" style="display: ${form_switch}; ${margin_toggle};">
+  <div class="l-wrap">
+
+    <div class="l-row">
+      <div class="l-row__col -m-16 -t-9 -d-8 -v-8 -center">
+        <h1 class="s-head -m-h2 -ml-h2 -semi-bold -xtight u-align-center">
+          ${form_title}
+        </h1>
+        <h3 class="s-head -m-h4 -medium -xwide u-align-center">
+          ${form_subtitle}
+        </h3>
+        <div class="m-card">
+          <div class="mktoForm m-form" id="exampleForm" mktoName="Marketo Form">
+          </div>
+        </div>
+        <p class="u-marg-top-tight u-align-center" style="display: ${form_disclaimer_switch};">
+          ${form_disclaimer}
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="l-band ${singleCTA_band} u-pad-y-5vh" style="display: ${singleCTA_switch}; ${margin_toggle};">
+  <div class="l-wrap">
+
+    <div class="l-row">
+      <div class="l-row__col -m-16 u-align-center">
+
+        <a href="${singleCTA_btnLink}" class="s-btn -round -accent -broad -small">
+          ${singleCTA_btnText}
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="l-band ${testimonial_band} u-pad-ml-y-11vh u-pad-y-8vh" style="display: ${testimonial_switch}; ${margin_toggle};">
+  <div class="l-wrap">
+
+    <div class="l-row">
+      <div class="l-row__col -m-16 -t-15 -d-16 -v-14 -center">
+        <h1 class="s-head -m-h2 -ml-h2 -semi-bold -tight u-align-center">
+          ${testimonial_title}
+        </h1>
+        <h3 class="s-head -m-h4 -medium -narrow u-align-center">
+          ${testimonial_subtitle}
+        </h3>
+
+        <div class="l-row">
+          <div class="l-row__col -m-16 -t-16 -d-14 -v-14 -center">
+            <div class="l-row -wide u-pad-bottom-tight u-align-center">
+              <div class="l-row__col -m-16 -t-8 -d-4 u-pad-y-3vh">
+                <i class="fas fa-star u-color-yellow"></i>
+                <i class="fas fa-star u-color-yellow"></i>
+                <i class="fas fa-star u-color-yellow"></i>
+                <i class="fas fa-star u-color-yellow"></i>
+                <i class="fas fa-star u-color-yellow"></i>
+                <p class="s-head -h4 -tight -semi-bold u-marg-top-tight">
+                  “${testimonial_quote1}”
+                </p>
+
+                <p class="s-head -h6">
+                  <strong>${testimonial_name1}</strong><br />
+                  ${testimonial_company1}
+                </p>
+              </div>
+
+              <div class="l-row__col -m-16 -t-8 -d-4 u-pad-y-3vh">
+                <i class="fas fa-star u-color-yellow"></i>
+                <i class="fas fa-star u-color-yellow"></i>
+                <i class="fas fa-star u-color-yellow"></i>
+                <i class="fas fa-star u-color-yellow"></i>
+                <i class="fas fa-star u-color-yellow"></i>
+                <p class="s-head -h4 -tight -semi-bold u-marg-top-tight">
+                  “${testimonial_quote2}”
+                </p>
+                <p class="s-head -h6">
+                  <strong>${testimonial_name2}</strong><br />
+                  ${testimonial_company2}
+                </p>
+              </div>
+
+              <div class="l-row__col -m-16 -t-8 -d-4 u-pad-y-3vh">
+                <i class="fas fa-star u-color-yellow"></i>
+                <i class="fas fa-star u-color-yellow"></i>
+                <i class="fas fa-star u-color-yellow"></i>
+                <i class="fas fa-star u-color-yellow"></i>
+                <i class="fas fa-star u-color-yellow"></i>
+                <p class="s-head -h4 -tight -semi-bold u-marg-top-tight">
+                  “${testimonial_quote3}”
+                </p>
+                <p class="s-head -h6">
+                  <strong>${testimonial_name3}</strong><br />
+                  ${testimonial_company3}
+                </p>
+              </div>
+
+              <div class="l-row__col -m-16 -t-8 -d-4 u-pad-y-3vh">
+                <i class="fas fa-star u-color-yellow"></i>
+                <i class="fas fa-star u-color-yellow"></i>
+                <i class="fas fa-star u-color-yellow"></i>
+                <i class="fas fa-star u-color-yellow"></i>
+                <i class="fas fa-star u-color-yellow"></i>
+                <p class="s-head -h4 -tight -semi-bold u-marg-top-tight">
+                  “${testimonial_quote4}”
+                </p>
+                <p class="s-head -h6">
+                  <strong>${testimonial_name4}</strong><br />
+                  ${testimonial_company4}
+                </p>
+              </div>
+
+            </div>
+
+            <img src="http://info.fergusapp.com/rs/163-RUO-573/images/capterra-logo.png" class="s-img" style="display: block; width: 100%; max-width: 180px; margin: auto;" />
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="l-band -brand-alt u-pad-y-5vh u-color-white" style="display: ${mainCTA_switch};">
+  <div class="l-wrap">
+
+    <div class="l-row">
+      <div class="l-row__col -m-16 -t-12 -d-11 -center u-align-center">
+        <h1 class="s-head -m-h2 -ml-h2 -semi-bold -xtight">
+          ${mainCTA_title}
+        </h1>
+        <h3 class="s-head -m-h4 -medium -tight">
+          ${mainCTA_subtitle}
+        </h3>
+        <a href="${mainCTA_btnLink}" class="s-btn -round -accent -broad -small">
+          ${mainCTA_btnText}
+        </a>
+        <p class="s-head -h6 u-marg-top-tight">
+          ${mainCTA_disclaimer}
+        </p>
+
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="l-band -brand u-pad-y-5vh u-color-white">
+  <div class="l-wrap">
+
+    <div class="l-row">
+      <div class="l-row__col -m-16 -t-5 u-pad-y-xtight">
+        <img src="http://info.fergusapp.com/rs/163-RUO-573/images/fergus-logo-white.svg" class="s-img -footer" />
+      </div>
+      <div class="l-row__col -m-16 -t-10">
+        <div class="l-row">
+          <div class="l-row__col -m-16 -t-1-3 -d-1-3 u-pad-y-tight">
+            <ul class="m-list -tight -footer -footer">
+              <li class="m-list__item">
+                <h4 class="s-head u-color-white -semi-bold -tight">Resources</h4>
+              </li>
+              <li class="m-list__item">
+                <a href="https://fergusapp.com/en/about">About us</a>
+              </li>
+              <li class="m-list__item">
+                <a href="https://fergusapp.com/pricing">Pricing</a>
+              </li>
+              <li class="m-list__item">
+                <a href="https://fergusapp.com/en/pricing#faq">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="l-row__col -m-16 -t-1-3 -d-1-3 u-pad-y-tight">
+            <ul class="m-list -tight -footer">
+              <li class="m-list__item">
+                <h4 class="s-head u-color-white -semi-bold -tight">How we help</h4>
+              </li>
+              <li class="m-list__item">
+                <a href="http://go.fergusapp.com/plumbing/">Plumbers</a>
+              </li>
+              <li class="m-list__item">
+                <a href="http://go.fergusapp.com/electrical/">Electricians</a>
+              </li>
+              <li class="m-list__item">
+                <a href="http://go.fergusapp.com/hvac/">HVAC</a>
+              </li>
+              <li class="m-list__item">
+                <a href="https://fergusapp.com/en/about">More</a>
+              </li>
+            </ul>
+          </div>
+          <div class="l-row__col -m-16 -t-1-3 -d-1-3 u-pad-y-tight">
+            <ul class="m-list -tight -footer">
+              <li class="m-list__item">
+                <h4 class="s-head u-color-white -semi-bold -tight">Other Features</h4>
+              </li>
+              <li class="m-list__item">
+                <a href="http://go.fergusapp.com/scheduling/">Scheduling</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="s-head -h5 u-color-white u-pad-top-5vh">
+      © Fergus
+    </p>
+  </div>
+</section>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="http://info.fergusapp.com/rs/163-RUO-573/images/main.js"></script>
+
+</body>
+</html>

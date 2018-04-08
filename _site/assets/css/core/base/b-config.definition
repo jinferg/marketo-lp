@@ -1,0 +1,101 @@
+// Config Definition
+// ============================================================
+
+
+// DEFAULTS
+// ------------------------------
+
+@max-width: 1440px;
+@radius: 5px;
+@background: #F6F8FA;
+@default-columns: 16;
+@border: 1px solid #D4DEE8;
+
+// TYPOGRAPHY
+// ------------------------------
+
+@font-family: 'IBM Plex Sans', sans-serif;
+@font-size: 1.5rem; // html sets font-size to 62.5% which makes calculating rems easy 1.4rem = 14px etc
+@thin: 200;
+@light: 300;
+@regular: 400;
+@medium: 500;
+@semi-bold: 600;
+@bold: 700;
+@black: 800;
+@line-height: 2.4rem; // 20px
+
+
+// COLORS
+// ------------------------------
+
+// Basic
+@red: #FF4C24;
+@orange: #FF7C52;
+@yellow: #FFB019;
+@green: #00D24B;
+@blue: #36A2FF;
+@purple: #5273FF;
+@black: #000000;
+@white: #fff;
+
+// Product
+@default-color: #4D5871;
+@brand-color: #ff6030;
+@accent-color: #FFB500;
+@link-color: @accent-color;
+@heading-color: #20293E;
+@input-color: white;
+
+// Utility
+@shade-light: rgba(100,120,160,.05);
+@shade: rgba(100,120,160,.1);
+@shade-heavy: rgba(100,120,160,.4);
+@shine-light: rgba(255,255,255,.05);
+@shine: rgba(255,255,255,.1);
+@shine-heavy: rgba(255,255,255,.4);
+
+
+// BREAKPOINTS
+// ------------------------------
+
+@desktop: ~"(min-width : 1600px)";
+@laptop:  ~"(min-width : 1024px)";
+@tablet:  ~"(min-width : 768px)";
+
+// VERTICAL RHYTHM
+// ------------------------------
+// Unit Scale for Padding, Margin etc
+
+@vr0: .5rem;
+@vr1: 1rem;
+@vr2: 2rem;
+@vr3: 3rem;
+@vr4: 4rem;
+@vr5: 5rem;
+@vr6: 6rem;
+@vr7: 7rem;
+@vr8: 8rem;
+@vr9: 9rem;
+@vr10: 10rem;
+@vr11: 11rem;
+@vr12: 12rem;
+@vr13: 13rem;
+@vr14: 14rem;
+@vr15: 15rem;
+@vr16: 16rem;
+@vr17: 17rem;
+@vr18: 18rem;
+@vr19: 19rem;
+@vr20: 20rem;
+
+
+// Typography Scale
+// ------------------------------
+
+@h1: 3.6rem;
+@h2: 2.8rem;
+@h3: 2.4rem;
+@h4: 1.8rem;
+@h5: 1.5rem;
+@h6: 1.2rem;

@@ -1,0 +1,50 @@
+// Wrap Layout
+// ============================================================
+
+@l-wrap__max-width: @max-width;
+
+.l-wrap {
+
+  position: relative;
+  width: 100%;
+  max-width: @l-wrap__max-width;
+  margin: auto;
+  padding-right: @vr2;
+  padding-left: @vr2;
+
+  @media @tablet {
+    padding-right: @vr4;
+    padding-left: @vr4;
+  }
+  @media @laptop {
+    padding-right: @vr5;
+    padding-left: @vr5;
+  }
+  @media @desktop {
+    padding-right: @vr6;
+    padding-left: @vr6;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  &.-flush {
+    padding: 0;
+  }
+  &.-tb-flush {
+    @media @tablet {
+      padding: 0;
+    }
+  }
+  &.-lp-flush {
+    @media @desktop {
+      padding: 0;
+    }
+  }
+  &.-dk-flush {
+    @media @desktop {
+      padding: 0;
+    }
+  }
+}

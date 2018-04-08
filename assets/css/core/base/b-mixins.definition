@@ -1,0 +1,13 @@
+// Mixins
+// ============================================================
+
+.card(@card-color: @white) {
+	background-color: @card-color;
+	border: 1px solid #E6E6F0;
+	border-radius: @radius;
+	box-shadow: 0px 5px 5px 0px rgba(0,60,200,0.1);
+}
+
+.fill(@card-color: @white) {
+	background-color: @card-color;
+}

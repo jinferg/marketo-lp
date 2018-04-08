@@ -1,0 +1,132 @@
+// Border Utility
+// ============================================================
+
+@u-border: 1px solid #dedede;
+
+
+.u-border {
+  border: @u-border !important;
+  &-top {
+    border-top: @u-border !important;
+  }
+  &-right {
+    border-right: @u-border !important;
+  }
+  &-bottom {
+    border-bottom: @u-border !important;
+  }
+  &-left {
+    border-left: @u-border !important;
+  }
+  &-x {
+    border-left: @u-border !important;
+    border-right: @u-border !important;
+  }
+  &-y {
+    border-top: @u-border !important;
+    border-bottom: @u-border !important;
+  }
+  &-radius {
+    border-radius: @radius !important;
+  }
+  &-none {
+    border: 0 !important;
+  }
+
+
+  @media @tablet {
+    // tablet
+    &-tb {
+      &-top {
+        border-top: @u-border !important;
+      }
+      &-right {
+        border-right: @u-border !important;
+      }
+      &-bottom {
+        border-bottom: @u-border !important;
+      }
+      &-left {
+        border-left: @u-border !important;
+      }
+      &-x {
+        border-left: @u-border !important;
+        border-right: @u-border !important;
+      }
+      &-y {
+        border-top: @u-border !important;
+        border-bottom: @u-border !important;
+      }
+      &-radius {
+        border-radius: @radius !important;
+      }
+      &-none {
+        border: 0 !important;
+      }
+    }
+  }
+
+  @media @laptop {
+    // laptop
+    &-lp {
+      &-top {
+        border-top: @u-border !important;
+      }
+      &-right {
+        border-right: @u-border !important;
+      }
+      &-bottom {
+        border-bottom: @u-border !important;
+      }
+      &-left {
+        border-left: @u-border !important;
+      }
+      &-x {
+        border-left: @u-border !important;
+        border-right: @u-border !important;
+      }
+      &-y {
+        border-top: @u-border !important;
+        border-bottom: @u-border !important;
+      }
+      &-radius {
+        border-radius: @radius !important;
+      }
+      &-none {
+        border: 0 !important;
+      }
+    }
+  }
+
+  @media @desktop {
+    // desktop
+    &-dk {
+      &-top {
+        border-top: @u-border !important;
+      }
+      &-right {
+        border-right: @u-border !important;
+      }
+      &-bottom {
+        border-bottom: @u-border !important;
+      }
+      &-left {
+        border-left: @u-border !important;
+      }
+      &-x {
+        border-left: @u-border !important;
+        border-right: @u-border !important;
+      }
+      &-y {
+        border-top: @u-border !important;
+        border-bottom: @u-border !important;
+      }
+      &-radius {
+        border-radius: @radius !important;
+      }
+      &-none {
+        border: 0 !important;
+      }
+    }
+  }
+}
