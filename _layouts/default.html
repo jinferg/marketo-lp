@@ -62,7 +62,7 @@
   <meta class="mktoBoolean" id="singleCTA_switch" mktoName="Single CTA - Visibility" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
   <meta class="mktoBoolean" id="testimonial_switch" mktoName="Testimonial - Visibility" default="true" true_value="block" false_value="none" false_value_name="Hide" true_value_name="Show">
   <meta class="mktoBoolean" id="mainCTA_switch" mktoName="Main CTA - Visibility" default="true" true_value="block"  false_value="none" false_value_name="Hide" true_value_name="Show">
-
+  <meta class="mktoBoolean" id="footer_switch" mktoName="Footer - Visibility" default="true" true_value="block"  false_value="none" false_value_name="Hide" true_value_name="Show">
 
   <!-- MASTER SWITCHES -->
   <meta class="mktoBoolean" id="margin_toggle" mktoName="Margin - Toggle" default="false" true_value="padding-top: 0 !important" false_value="" false_value_name="Default" true_value_name="None">
@@ -455,9 +455,12 @@
             <div class="mktoText u-pad-bottom-tight" id="imageLTR_body" mktoName="Body">
               Optionally add default text for the editable text area.
             </div>
-            <a href="${imageLTR_btnLink}" class="s-btn -round -accent -broad -small u-marg-top-xtight" style="display: ${imageLTR_btnSwitch};">
-              ${imageLTR_btnText}
-            </a>
+            <div style="display: ${imageLTR_btnSwitch};">
+              <a href="${imageLTR_btnLink}" class="s-btn -round -accent -broad -small u-marg-top-xtight">
+                ${imageLTR_btnText}
+              </a>
+            </div>
+
           </div>
         </div>
 
@@ -627,9 +630,7 @@
   </div>
 </section>
 
-
-
-<section class="l-band -brand u-pad-y-5vh u-color-white">
+<section class="l-band -brand u-pad-y-5vh u-color-white" style="display: ${footer_switch};">
   <div class="l-wrap">
 
     <div class="l-row">
@@ -641,16 +642,31 @@
           <div class="l-row__col -w-16 -t-1-3 -d-1-3 u-pad-y-tight">
             <ul class="m-list -tight -footer -footer">
               <li class="m-list__item">
-                <h4 class="s-head u-color-white -semi-bold -tight">Resources</h4>
+                <h4 class="s-head u-color-white -semi-bold -tight">Features</h4>
               </li>
               <li class="m-list__item">
-                <a href="https://fergus.com/en/about">About us</a>
+                <a href="https://fergus.com/en/features-overview/track-manage-jobs">Job Tracking</a>
               </li>
               <li class="m-list__item">
-                <a href="https://fergus.com/pricing">Pricing</a>
+                <a href="https://fergus.com/en/features-overview/team-management">Team Management</a>
               </li>
               <li class="m-list__item">
-                <a href="https://fergus.com/en/pricing#faq">FAQ</a>
+                <a href="https://fergus.com/en/features-overview/quoting">Quoting</a>
+              </li>
+              <li class="m-list__item">
+                <a href="https://fergus.com/en/features-overview/job-scheduler">Scheduling</a>
+              </li>
+              <li class="m-list__item">
+                <a href="https://fergus.com/en/features-overview/on-the-job">On the job</a>
+              </li>
+              <li class="m-list__item">
+                <a href="https://fergus.com/en/features-overview/invoicing">Invoicing</a>
+              </li>
+              <li class="m-list__item">
+                <a href="https://fergus.com/en/features-overview/reporting">Reporting</a>
+              </li>
+              <li class="m-list__item">
+                <a href="https://fergus.com/en/features-overview/integrations">Integrations</a>
               </li>
             </ul>
           </div>
@@ -660,26 +676,29 @@
                 <h4 class="s-head u-color-white -semi-bold -tight">How we help</h4>
               </li>
               <li class="m-list__item">
-                <a href="https://go.fergus.com/plumbing/">Plumbers</a>
+                <a href="https://fergus.com/en/plumbing">Plumbers</a>
               </li>
               <li class="m-list__item">
-                <a href="https://go.fergus.com/electrical/">Electricians</a>
+                <a href="https://fergus.com/en/electrical">Electricians</a>
               </li>
               <li class="m-list__item">
-                <a href="https://go.fergus.com/hvac/">HVAC</a>
+                <a href="https://fergus.com/en/services">Service Industry</a>
               </li>
               <li class="m-list__item">
-                <a href="https://fergus.com/en/about">More</a>
+                <a href="https://fergus.com/en/other-trades">More</a>
               </li>
             </ul>
           </div>
           <div class="l-row__col -w-16 -t-1-3 -d-1-3 u-pad-y-tight">
             <ul class="m-list -tight -footer">
               <li class="m-list__item">
-                <h4 class="s-head u-color-white -semi-bold -tight">Other Features</h4>
+                <h4 class="s-head u-color-white -semi-bold -tight">Resources</h4>
               </li>
               <li class="m-list__item">
-                <a href="https://go.fergus.com/scheduling/">Scheduling</a>
+                <a href="https://fergus.com/en/about">About us</a>
+              </li>
+              <li class="m-list__item">
+                <a href="https://fergus.com/en/pricing">Pricing</a>
               </li>
             </ul>
           </div>
