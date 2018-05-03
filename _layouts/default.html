@@ -133,6 +133,7 @@
 
 
   <!-- IMAGE LEFT TEXT RIGHT -->
+  <meta class="mktoBoolean" id="imageLTR_btnSwitch" mktoName="Image Left Text Right - Button Switch" default="true" true_value="block"  false_value="none" false_value_name="Hide" true_value_name="Show">
   <meta class="mktoString" id="imageLTR_title" mktoName="Image Left Text Right - Title" default="The nuts and bolts" allowHtml="true">
   <meta class="mktoString" id="imageLTR_btnLink" mktoName="Image Left Text Right - Button Link" default="https://fergus.com" allowHtml="true">
   <meta class="mktoString" id="imageLTR_btnText" mktoName="Image Left Text Right - Button Text" default="Free Trial" allowHtml="true">
@@ -172,6 +173,7 @@
 
 
   <!-- MAIN CTA -->
+  <meta class="mktoBoolean" id="mainCTA_logoSwitch" mktoName="Main CTA - Logo Visibility" default="true" true_value="block"  false_value="none" false_value_name="Hide" true_value_name="Show">
   <meta class="mktoString" id="mainCTA_title" mktoName="Main CTA - Title" default="Try it free for 30 days" allowHtml="true">
   <meta class="mktoString" id="mainCTA_subtitle" mktoName="Main CTA - Subitle" default="All from the same place. Forget data entry." allowHtml="true">
   <meta class="mktoString" id="mainCTA_disclaimer" mktoName="Main CTA - Disclaimer" default="No credit card required. Try it for 30 days for free." allowHtml="true">
@@ -453,7 +455,7 @@
             <div class="mktoText u-pad-bottom-tight" id="imageLTR_body" mktoName="Body">
               Optionally add default text for the editable text area.
             </div>
-            <a href="${imageLTR_btnLink}" class="s-btn -round -accent -broad -small u-marg-top-xtight">
+            <a href="${imageLTR_btnLink}" class="s-btn -round -accent -broad -small u-marg-top-xtight" style="display: ${imageLTR_btnSwitch};">
               ${imageLTR_btnText}
             </a>
           </div>
@@ -604,6 +606,7 @@
 
     <div class="l-row">
       <div class="l-row__col -w-16 -t-12 -d-11 -center u-align-center">
+        <img src="https://info.fergus.com/rs/163-RUO-573/images/fergus-logo-white.svg" class="s-img -footer u-marg-bottom u-marg-auto" style="display: ${mainCTA_logoSwitch};" />
         <h1 class="s-head -h2 -ml-h2 -semi-bold -xtight">
           ${mainCTA_title}
         </h1>
