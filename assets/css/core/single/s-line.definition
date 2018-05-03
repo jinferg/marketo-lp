@@ -2,16 +2,12 @@
 // ============================================================
 
 @s-line__weight: 1px;
+@s-line__color: @shade;
+
 
 .s-line {
   display: block;
   width: 100%;
   height: @s-line__weight;
-  background: @shade;
-  &.-shade-light {
-    background: @shade-light;
-  }
-  &.-shade-heavy {
-    background: @shade-heavy;
-  }
+  background: @s-line__color;
 }

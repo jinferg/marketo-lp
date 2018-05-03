@@ -51,6 +51,13 @@
 		"oAP": "\/core\/layout\/l-band.definition",
 		"oF": 0
 		},
+	"\/core\/layout\/l-frame.definition": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/core\/layout\/l-frame.definition",
+		"oF": 0
+		},
 	"\/core\/layout\/l-grid.definition": {
 		"cB": 0,
 		"ft": 8192,
@@ -70,6 +77,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/core\/layout\/l-wrap.definition",
+		"oF": 0
+		},
+	"\/core\/module\/m-accordian.definition": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/core\/module\/m-accordian.definition",
 		"oF": 0
 		},
 	"\/core\/module\/m-breadcrumb.definition": {
@@ -163,13 +177,6 @@
 		"oAP": "\/core\/single\/s-img.definition",
 		"oF": 0
 		},
-	"\/core\/single\/s-label.definition": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/core\/single\/s-label.definition",
-		"oF": 0
-		},
 	"\/core\/single\/s-line.definition": {
 		"cB": 0,
 		"ft": 8192,
@@ -254,6 +261,13 @@
 		"oAP": "\/core\/utility\/u-pad.definition",
 		"oF": 0
 		},
+	"\/core\/utility\/u-pos.definition": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/core\/utility\/u-pos.definition",
+		"oF": 0
+		},
 	"\/core\/utility\/u-show.definition": {
 		"cB": 0,
 		"ft": 8192,
@@ -282,7 +296,7 @@
 		"oA": 0,
 		"oAP": "\/zap.css",
 		"oF": 0,
-		"oS": 1,
+		"oS": 0,
 		"rU": 0,
 		"sI": 0,
 		"sM": 0,

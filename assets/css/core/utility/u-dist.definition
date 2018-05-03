@@ -48,23 +48,25 @@
   &-left-xwide > * + * {
     margin-left: @u-dist__xwide !important;
   }
+}
 
 
 
-  @media @tablet {
-    &-tb {
-      // Space Out Child
-      // ------------------------------
-      // Spaces out child elements vertically
+@media @mobile {
+  .u-dist-m {
+    // Space Out Child
+    // ------------------------------
+    // Spaces out child elements vertically
 
-      & > * + * {
-        margin-top: @u-dist__narrow !important;
-      }
+    & {
       &-xtight > * + * {
         margin-top: @u-dist__xtight !important;
       }
       &-tight > * + * {
         margin-top: @u-dist__tight !important;
+      }
+      & > * + * {
+        margin-top: @u-dist__narrow !important;
       }
       &-wide > * + * {
         margin-top: @u-dist__wide !important;
@@ -72,19 +74,21 @@
       &-xwide > * + * {
         margin-top: @u-dist__xwide !important;
       }
+    }
 
-      // Space Out Child Left
-      // ------------------------------
-      // Spaces out child elements Horizontally
+    // Space Out Child Left
+    // ------------------------------
+    // Spaces out child elements Horizontally
 
-      & > * + * {
-        margin-left: @u-dist__narrow !important;
-      }
+    &-left {
       &-xtight > * + * {
         margin-left: @u-dist__xtight !important;
       }
       &-tight > * + * {
         margin-left: @u-dist__tight !important;
+      }
+      & > * + * {
+        margin-left: @u-dist__narrow !important;
       }
       &-wide > * + * {
         margin-left: @u-dist__wide !important;
@@ -94,21 +98,23 @@
       }
     }
   }
+}
 
-  @media @laptop{
-    &-lp {
-      // Space Out Child
-      // ------------------------------
-      // Spaces out child elements vertically
+@media @mobile-ls {
+  .u-dist-ml {
+    // Space Out Child
+    // ------------------------------
+    // Spaces out child elements vertically
 
-      & > * + * {
-        margin-top: @u-dist__narrow !important;
-      }
+    & {
       &-xtight > * + * {
         margin-top: @u-dist__xtight !important;
       }
       &-tight > * + * {
         margin-top: @u-dist__tight !important;
+      }
+      & > * + * {
+        margin-top: @u-dist__narrow !important;
       }
       &-wide > * + * {
         margin-top: @u-dist__wide !important;
@@ -116,19 +122,21 @@
       &-xwide > * + * {
         margin-top: @u-dist__xwide !important;
       }
+    }
 
-      // Space Out Child Left
-      // ------------------------------
-      // Spaces out child elements Horizontally
+    // Space Out Child Left
+    // ------------------------------
+    // Spaces out child elements Horizontally
 
-      & > * + * {
-        margin-left: @u-dist__narrow !important;
-      }
+    &-left {
       &-xtight > * + * {
         margin-left: @u-dist__xtight !important;
       }
       &-tight > * + * {
         margin-left: @u-dist__tight !important;
+      }
+      & > * + * {
+        margin-left: @u-dist__narrow !important;
       }
       &-wide > * + * {
         margin-left: @u-dist__wide !important;
@@ -138,21 +146,23 @@
       }
     }
   }
+}
 
-  @media @desktop {
-    &-dk {
-      // Space Out Child
-      // ------------------------------
-      // Spaces out child elements vertically
+@media @tablet {
+  .u-dist-t {
+    // Space Out Child
+    // ------------------------------
+    // Spaces out child elements vertically
 
-      & > * + * {
-        margin-top: @u-dist__narrow !important;
-      }
+    & {
       &-xtight > * + * {
         margin-top: @u-dist__xtight !important;
       }
       &-tight > * + * {
         margin-top: @u-dist__tight !important;
+      }
+      & > * + * {
+        margin-top: @u-dist__narrow !important;
       }
       &-wide > * + * {
         margin-top: @u-dist__wide !important;
@@ -160,19 +170,21 @@
       &-xwide > * + * {
         margin-top: @u-dist__xwide !important;
       }
+    }
 
-      // Space Out Child Left
-      // ------------------------------
-      // Spaces out child elements Horizontally
+    // Space Out Child Left
+    // ------------------------------
+    // Spaces out child elements Horizontally
 
-      & > * + * {
-        margin-left: @u-dist__narrow !important;
-      }
+    &-left {
       &-xtight > * + * {
         margin-left: @u-dist__xtight !important;
       }
       &-tight > * + * {
         margin-left: @u-dist__tight !important;
+      }
+      & > * + * {
+        margin-left: @u-dist__narrow !important;
       }
       &-wide > * + * {
         margin-left: @u-dist__wide !important;
@@ -180,6 +192,51 @@
       &-xwide > * + * {
         margin-left: @u-dist__xwide !important;
       }
+    }
+  }
+}
+@media @desktop {
+  // Space Out Child
+  // ------------------------------
+  // Spaces out child elements vertically
+
+  & {
+    &-xtight > * + * {
+      margin-top: @u-dist__xtight !important;
+    }
+    &-tight > * + * {
+      margin-top: @u-dist__tight !important;
+    }
+    & > * + * {
+      margin-top: @u-dist__narrow !important;
+    }
+    &-wide > * + * {
+      margin-top: @u-dist__wide !important;
+    }
+    &-xwide > * + * {
+      margin-top: @u-dist__xwide !important;
+    }
+  }
+
+  // Space Out Child Left
+  // ------------------------------
+  // Spaces out child elements Horizontally
+
+  &-left {
+    &-xtight > * + * {
+      margin-left: @u-dist__xtight !important;
+    }
+    &-tight > * + * {
+      margin-left: @u-dist__tight !important;
+    }
+    & > * + * {
+      margin-left: @u-dist__narrow !important;
+    }
+    &-wide > * + * {
+      margin-left: @u-dist__wide !important;
+    }
+    &-xwide > * + * {
+      margin-left: @u-dist__xwide !important;
     }
   }
 }

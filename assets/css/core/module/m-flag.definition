@@ -17,18 +17,28 @@
   &.-wrap {
     flex-wrap: wrap;
   }
-  &.-tb-wrap {
-    @media @tablet {
+  @media @mobile {
+    &.-m-wrap {
       flex-wrap: wrap;
     }
   }
-  &.-lp-wrap {
-    @media @laptop {
+  @media @mobile-ls {
+    &.-ml-wrap {
       flex-wrap: wrap;
     }
   }
-  &.-dk-wrap {
-    @media @desktop {
+  @media @tablet {
+    &.-t-wrap {
+      flex-wrap: wrap;
+    }
+  }
+  @media @desktop {
+    &.-d-wrap {
+      flex-wrap: wrap;
+    }
+  }
+  @media @tv {
+    &.-v-wrap {
       flex-wrap: wrap;
     }
   }
@@ -59,7 +69,65 @@
       padding-right: @m-flag__xwide;
     }
   }
-  &.-tb {
+  &.-m {
+    @media @mobile {
+      &-xtight {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__xtight;
+        }
+      }
+      &-tight {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__tight;
+        }
+      }
+      &-narrow {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__narrow;
+        }
+      }
+      &-wide {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__wide;
+        }
+      }
+      &-xwide {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__xwide;
+        }
+      }
+    }
+  }
+  &.-ml {
+    @media @mobile-ls {
+      &-xtight {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__xtight;
+        }
+      }
+      &-tight {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__tight;
+        }
+      }
+      &-narrow {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__narrow;
+        }
+      }
+      &-wide {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__wide;
+        }
+      }
+      &-xwide {
+        .m-flag__item:first-child {
+          padding-right: @m-flag__xwide;
+        }
+      }
+    }
+  }
+  &.-t {
     @media @tablet {
       &-xtight {
         .m-flag__item:first-child {
@@ -88,8 +156,8 @@
       }
     }
   }
-  .-lp {
-    @media @laptop{
+  &.-d {
+    @media @desktop {
       &-xtight {
         .m-flag__item:first-child {
           padding-right: @m-flag__xtight;
@@ -117,8 +185,8 @@
       }
     }
   }
-  &.-dk {
-    @media @desktop {
+  &.-v {
+    @media @tv {
       &-xtight {
         .m-flag__item:first-child {
           padding-right: @m-flag__xtight;

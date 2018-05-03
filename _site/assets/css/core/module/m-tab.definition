@@ -12,9 +12,8 @@
       display: table;
       clear: both;
     }
-    display: none;
-    @media @desktop {
-      display: block;
+    @media @mobile, @tablet {
+      display: none;
     }
     &__item {
       display: inline-block;
@@ -40,13 +39,13 @@
 
     &__tab {
       cursor: pointer;
-      display: block;
+      display: none;
       margin: 0;
       padding: @vr1 + @vr0;
       font-size: @h5;
       line-height: @vr2;
       .fill(@white);
-      @media @desktop {
+      @media @mobile, @tablet {
         display: block;
       }
       &.is-active {
@@ -112,16 +111,16 @@
     }
     .m-tab-container {
       padding: 0;
-      border: none;
-      float: none;
-      width: 100%;
-      min-height: initial;
+      float: left;
+      width: 80%;
+      margin: 0;
+      min-height: 250px;
       clear: none;
-      @media @desktop {
-        float: left;
-        width: 80%;
-        margin: 0;
-        min-height: 250px;
+      @media @mobile, @tablet {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: initial;
         clear: none;
       }
     }
@@ -133,13 +132,14 @@
 
   &.-only {
     .m-tab-list {
-      display: block;
+      @media @mobile, @tablet {
+        display: block;
+      }
     }
     .m-tab-container {
       &__tab {
-        display: none;
-        @desktop {
-          display: block;
+        @media @mobile, @tablet {
+          display: none;
         }
       }
     }

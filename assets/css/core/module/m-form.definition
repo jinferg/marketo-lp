@@ -45,6 +45,8 @@
       color: @black;
       outline: 0;
       border: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
       appearance: none;
       background: @input-color;
       transition: all .5s ease;
@@ -74,6 +76,8 @@
     color: @black;
     outline: 0;
     border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     background: @input-color;
     transition: all .5s ease;
@@ -216,6 +220,8 @@
       border-radius: @radius;
       font-size: @h6;
       color: @black;
+      -webkit-appearance: none;
+      -moz-appearance: none;
       appearance: none;
       background: @input-color;
       &:hover, &:focus {

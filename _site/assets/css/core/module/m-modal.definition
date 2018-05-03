@@ -18,19 +18,22 @@
   opacity: 0;
   transition: all 1s ease;
 
-  iframe {
-    display: none;
-  }
-
-  @media @tablet {
+  @media @mobile {
     iframe {
-      display: block;
+      display: none;
     }
   }
 
   &.is-active {
     visibility: visible;
     opacity: 1;
+    .m-modal__content {
+      @media @mobile {
+        iframe {
+          display: block;
+        }
+      }
+    }
   }
 
 

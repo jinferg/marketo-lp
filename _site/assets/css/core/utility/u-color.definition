@@ -1,56 +1,47 @@
 // Color Utility
 // ============================================================
 
-.u-color {
-  // Default Colors
-  &-red {
-    color: @red !important;
-  }
-  &-orange {
-    color: @orange !important;
-  }
-  &-yellow {
-    color: @yellow !important;
-  }
-  &-green {
-    color: @green !important;
-  }
-  &-blue {
-    color: @blue !important;
-  }
-  &-purple {
-    color: @purple !important;
-  }
-  &-black {
-    color: @black !important;
-  }
-  &-white {
-    color: @white !important;
-  }
+.u-color-default {
+  color: @default-color !important;
+}
+.u-color-brand {
+  color: @brand-color !important;
+}
+.u-color-accent {
+  color: @accent-color !important;
+}
+.u-color-red {
+  color: @red !important;
+}
+.u-color-orange {
+  color: @orange !important;
+}
+.u-color-yellow {
+  color: @yellow !important;
+}
+.u-color-green {
+  color: @green !important;
+}
+.u-color-blue {
+  color: @blue !important;
+}
+.u-color-purple {
+  color: @purple !important;
+}
+.u-color-black {
+  color: @black !important;
+}
+.u-color-white {
+  color: @white !important;
+}
 
-
-  // Product Colors
-
-  &-default {
-    color: @default-color !important;
-  }
-  &-brand {
-    color: @brand-color !important;
-  }
-  &-accent {
-    color: @accent-color !important;
-  }
-  &-heading {
-    color: @heading-color !important;
-  }
-
-  &-shade-light {
-    color: @shade-light !important;
-  }
-  &-shade {
-    color: @shade !important;
-  }
-  &-shade-heavy {
-    color: @shade-heavy !important;
-  }
+// Special Colors
+.u-color-shade-light {
+  color: @shade-light !important;
+}
+.u-color-shade {
+  color: @shade !important;
+}
+.u-color-shade-heavy {
+  color: @shade-heavy !important;
 }

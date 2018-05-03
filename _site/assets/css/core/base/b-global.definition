@@ -36,7 +36,6 @@ body {
 // ------------------------------
 h1,h2,h3,h4,h5,h6 {
 	line-height: 1.25;
-	color: @heading-color;
 }
 h1 {
   font-size: @h1;
@@ -124,20 +123,17 @@ mark {
   background: #C9F0FF;
 }
 br {
-  &.-hidden {
-    display: none;
+  &.-m-hidden {
+    @media @mobile {
+      display: none;
+    }
   }
-  &.-tb-hidden {
+  &.-t-hidden {
     @media @tablet {
       display: none;
     }
   }
-	&.-lp-hidden {
-    @media @laptop {
-      display: none;
-    }
-  }
-  &.-dk-hidden {
+  &.-d-hidden {
     @media @desktop {
       display: none;
     }
@@ -171,3 +167,16 @@ sub, sup {
 }
 sup { top: -0.5em;left: .2em }
 sub { bottom: -0.25em; }
+
+
+// Codeblocks
+// ------------------------------
+
+code, pre {
+  font-family: Inconsolata, monospace, sans-serif;
+  white-space: pre-wrap;
+  background: darken(@background, 10%);
+  padding: 0 .5rem;
+  border-radius: @radius;
+  color: #555;
+}

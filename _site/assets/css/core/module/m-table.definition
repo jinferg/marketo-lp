@@ -3,107 +3,126 @@
 
 @m-table__hover-color: lighten(@brand-color, 50%);
 
-
-.m-table {
-  border-collapse: separate;
-  text-align: left;
+.m-table-resp-properties {
   background: transparent;
-  border: 0;
   box-shadow: none;
-
-  @media @tablet {
-    .card;
-  }
-
-  // Defaults
 
   thead {
     display: none;
-    @media @tablet {
-      display: table-header-group;
-    }
   }
 
   tbody {
-    display: block;
-    @media @tablet {
-      display: table-row-group;
-    }
+    display: table-row-group;
   }
 
   tr {
     display: block;
-    margin-bottom: @vr2;
     .card;
+    margin-bottom: @vr2;
+    &:last-child {
+      td {
+        border-bottom: @border;
+      }
+    }
+  }
+  th, td {
+    display: block;
+    height: auto;
+    padding: @vr1;
+  }
 
+  td:before {
+    content: attr(data-label);
+    float: left;
+    font-size: @h6;
+    font-weight: @semi-bold;
+    text-transform: uppercase;
+    color: @black;
+  }
+}
+
+.m-table {
+  border-collapse: separate;
+  text-align: left;
+  .card;
+
+  &.-fluid {
+    width: 100%;
+  }
+  &.-resp {
+    @media @mobile, @tablet {
+      .m-table-resp-properties;
+    }
+  }
+  &.-m-resp {
+    @media @mobile {
+      .m-table-resp-properties;
+    }
+  }
+  &.-t-resp {
     @media @tablet {
-      display: table-row;
-      background: transparent;
-      border: 0;
-      box-shadow: none;
-      &:last-child td {
+      .m-table-resp-properties;
+    }
+  }
+  thead {
+    th {
+      height: @vr5;
+      font-size: @h6;
+      font-weight: @semi-bold;
+      color: @black;
+      &.-clickable {
+        cursor: pointer;
+        &:hover {
+          background: @m-table__hover-color;
+        }
+      }
+    }
+  }
+  tbody {
+    &.-clickable {
+      tr{
+        cursor: pointer;
+        &:hover {
+          background: @m-table__hover-color;
+        }
+      }
+    }
+  }
+  tr {
+    transition: background .2s ease;
+    &:last-child {
+      td {
         border-bottom: 0;
       }
     }
   }
   th, td {
-    display: flex;
-    height: auto;
-    padding: @vr1;
-    align-items: center;
-    @media @tablet {
-      display: table-cell;
-    }
-  }
-
-  th {
+    height: @vr5;
+    vertical-align: middle;
+    padding-left: @vr2;
+    padding-right: @vr2;
     border-bottom: @border;
-  }
+    transition: background .2s ease;
 
-  td {
-    border-bottom: @border;
-    &:last-child {
-      border-bottom: 0;
-      @media @tablet {
-        border-bottom: @border;
-      }
-    }
-    @media @tablet {
-      border-bottom: @border;
-    }
+    // This builds the shrink/grow functionality into the table
+    // &:not(:last-child){
+    //   white-space: nowrap;
+    // }
+    // &:first-child{
+    //   width: 100%;
+    // }
 
-    // data label pseudo for responsive table
-    &:before {
-      content: attr(data-label);
-      flex: 1;
-      @media @tablet {
-        display: none;
-      }
+    &.-shrink {
+      white-space: nowrap;
     }
-  }
-
-  &.-reset {
-    background: transparent;
-  	border: 0;
-  	border-radius: 0;
-  	box-shadow: none;
-    tr {
-      background: transparent;
-    	border: 0;
-    	border-radius: 0;
-    	box-shadow: none;
+    &.-grow {
+      width: 99%;
     }
-    th, td {
-      padding: 0;
-      border: 0;
+    a {
+      padding-right: @vr1;
       &:last-child {
-        border: 0;
+        padding-right: 0;
       }
     }
-  }
-
-  // Span
-  &.-fluid {
-    width: 100%;
   }
 }

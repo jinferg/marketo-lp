@@ -1,44 +1,11 @@
 // Card Module
 // ============================================================
 
-@m-card__xtight: @vr2;
-@m-card__tight: @vr4;
-@m-card__narrow: @vr6;
-@m-card__wide: @vr8;
-@m-card__xwide: @vr10;
-
 .m-card {
 	display: block;
-
+	padding: @vr4;
 	.card(white);
-
 	&.-form {
 		max-width: @vr10 * 4;
 	}
-	&.-flat {
-		box-shadow: none;
-		background: @shade;
-	}
-	&__content {
-		padding: @vr2;
-	}
-
-	// Spacing Variations
-  // ------------------------------
-
-  &.-xtight {
-    margin-bottom: @m-card__xtight;
-  }
-  &.-tight {
-    margin-bottom: @m-card__tight;
-  }
-  &.-narrow {
-    margin-bottom: @m-card__narrow;
-  }
-  &.-wide {
-    margin-bottom: @m-card__wide;
-  }
-  &.-xwide {
-    margin-bottom: @m-card__xwide;
-  }
 }

@@ -3,18 +3,28 @@
 
 .u-hide {
   display: none !important;
-  @media @tablet {
-    &-tb {
+  &-m {
+    @media @mobile {
       display: none !important;
     }
   }
-  @media @laptop {
-    &-lp {
+  &-ml {
+    @media @mobile-ls {
       display: none !important;
     }
   }
-  @media @desktop {
-    &-dk {
+  &-t {
+    @media @tablet {
+      display: none !important;
+    }
+  }
+  &-d {
+    @media @desktop {
+      display: none !important;
+    }
+  }
+  &-v {
+    @media @tv {
       display: none !important;
     }
   }
